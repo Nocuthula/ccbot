@@ -22,7 +22,7 @@ def login(email, password):
 	return response.geturl()
 
 #session name
-def edit_session_name(name,session_url):
+def edit_name(name,session_url):
 	br.open(session_url)
 	br.select_form(nr=0)
 	br.form["activity[name]"] = name
