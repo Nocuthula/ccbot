@@ -22,18 +22,15 @@ def login(email, password):
 	return response.geturl()
 
 #session name
-def edit_session_name(name,session_url):
+def edit_name(name,session_url):
 	br.open(session_url)
 	br.select_form(nr=0)
 	br.form["activity[name]"] = name
 	br.submit()
 
-
-def edit_session():
-	pass
-
 	
-
+def test():
+        pass
 #Attendees
 #login("fashanu@appyourevent.co","fashanu@2015")
 #url = "https://v3.eventcenter.crowdcompass.com/admin/events/yiTVBA0C12/activities/810329/edit"
