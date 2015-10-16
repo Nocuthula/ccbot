@@ -12,7 +12,7 @@ def get_forms(page):
 	for form in br.forms():
 		print form
 
-#login 
+#login
 def login(email, password):
 	br.open(login_url)
 	br.select_form(nr = 0)
@@ -27,6 +27,12 @@ def edit_name(name,session_url):
 	br.select_form(nr=0)
 	br.form["activity[name]"] = name
 	br.submit()
+
+
+def edit_session():
+	pass
+
+	
 
 #Attendees
 #login("fashanu@appyourevent.co","fashanu@2015")
